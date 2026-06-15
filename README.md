@@ -136,10 +136,10 @@ Fake-News-Detection/
 ## 📸 Screenshots
 
 ### 🏠 Application Interface
-![Home](screenshots/home.png)
+![Home](screenshots/dataflow.png)
 
 ### 📊 Prediction Output
-![Result](screenshots/result.png)
+![UI Design](screenshots/UI_Design.png)
 
 ---
 
