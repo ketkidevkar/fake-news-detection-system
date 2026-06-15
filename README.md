@@ -3,11 +3,11 @@
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-NLP-green.svg)
-![Status](https://img.shields.io/badge/Status-Production%20Ready-success.svg)
-![Accuracy](https://img.shields.io/badge/Model-High%20Accuracy-brightgreen.svg)
+![NLP](https://img.shields.io/badge/NLP-Natural%20Language%20Processing-orange.svg)
+![ML](https://img.shields.io/badge/Machine%20Learning-Passive%20Aggressive%20Classifier-green.svg)
+![Status](https://img.shields.io/badge/Status-Research%20to%20Production-success.svg)
 
-### 🧠 AI-Powered Fake News Detection & Content Verification System
+### 🧠 AI-Powered Fake News Detection Using Machine Learning & NLP
 
 </div>
 
@@ -15,31 +15,55 @@
 
 ## 📌 Project Overview
 
-The Fake News Detection System is an advanced **Machine Learning and Natural Language Processing (NLP) based classification system** designed to detect whether a news article is *real or fake*.
+The rapid growth of digital media has enabled instant access to information across the world. However, this convenience has also led to a serious challenge — the **spread of misinformation and fake news**.
 
-In today’s digital world, misinformation spreads rapidly across social media platforms. This system helps mitigate misinformation by analyzing textual patterns, linguistic features, and contextual relationships using AI models.
+This project focuses on addressing this issue by developing an intelligent **Fake News Detection System** using **Machine Learning (ML)** and **Natural Language Processing (NLP)** techniques.
+
+The system is designed to classify news articles as **real or fake** with high accuracy, helping users verify content authenticity in real time.
 
 ---
 
-## 🎯 Objectives
+## 🎯 Project Objectives
 
-- Detect fake news with high accuracy using ML models
-- Automate news verification process
-- Reduce misinformation spread on digital platforms
-- Provide real-time prediction system for text input
+The Fake News Detection System is designed with the following core objectives:
+
+### 1. 🧠 Develop an Efficient ML Classification Model
+- Implement **Passive Aggressive Classifier**
+- Train model for real-time text classification
+- Achieve high accuracy in fake news detection
+
+### 2. 🧹 Data Preprocessing & Feature Engineering
+- Clean and normalize textual data
+- Remove stopwords, punctuation, and noise
+- Convert text into numerical features using **TF-IDF Vectorization**
+
+### 3. 🌐 Build User-Friendly Application Interface
+- Develop a simple and interactive GUI/Web interface
+- Allow users to input news articles easily
+- Display real-time prediction results
+
+### 4. ⚡ Optimize Performance & Response Time
+- Ensure fast prediction on large text inputs
+- Optimize preprocessing pipeline for efficiency
+- Enable real-time classification capability
+
+### 5. 🔗 System Integration & Testing
+- Integrate ML model with application backend
+- Perform testing on real-world datasets
+- Validate system accuracy and reliability
 
 ---
 
 ## 🧠 System Architecture
 
 ```text
-User Input (News Text)
+User Input (News Article)
         ↓
-Text Preprocessing (Cleaning, Stopwords Removal)
+Text Preprocessing
         ↓
-Feature Extraction (TF-IDF Vectorization)
+TF-IDF Vectorization
         ↓
-Machine Learning Model (Logistic Regression / Naive Bayes)
+Passive Aggressive Classifier
         ↓
 Prediction Engine
         ↓
@@ -53,29 +77,33 @@ Result (REAL / FAKE)
 ### Programming Language
 - Python
 
-### Libraries & Frameworks
+### Machine Learning
+- Passive Aggressive Classifier
+- Scikit-learn
+- TF-IDF Vectorizer
+
+### NLP Techniques
+- Tokenization
+- Stopword Removal
+- Text Normalization
+
+### Libraries
 - Pandas
 - NumPy
-- Scikit-learn
 - NLTK / spaCy
-
-### ML Concepts Used
-- Natural Language Processing (NLP)
-- TF-IDF Vectorization
-- Classification Algorithms
-- Model Evaluation Metrics
+- Scikit-learn
 
 ---
 
 ## ✨ Key Features
 
-- 🧠 AI-based fake news classification
-- 📝 NLP text preprocessing pipeline
-- 📊 TF-IDF feature extraction
-- ⚡ Real-time prediction system
-- 📈 Model accuracy evaluation
-- 🔍 Text cleaning & normalization
-- 📉 Confusion matrix analysis
+- 📰 Real-time fake news detection
+- 🧠 ML-powered classification engine
+- 📊 TF-IDF-based feature extraction
+- ⚡ Fast prediction response system
+- 🔍 NLP-based text preprocessing pipeline
+- 📈 High accuracy classification model
+- 💡 Simple and interactive user interface
 
 ---
 
@@ -84,12 +112,12 @@ Result (REAL / FAKE)
 ```bash
 Fake-News-Detection/
 │
-├── dataset.csv
-├── main.py
-├── train_model.py
-├── preprocess.py
+├── app.py
 ├── model.pkl
 ├── vectorizer.pkl
+├── train_model.py
+├── preprocess.py
+├── dataset.csv
 └── README.md
 ```
 
@@ -97,48 +125,42 @@ Fake-News-Detection/
 
 ## 🔄 Workflow
 
-1. User enters news text
-2. System cleans and preprocesses text
+1. User enters news text in the application
+2. Text is cleaned and preprocessed
 3. TF-IDF converts text into numerical vectors
-4. ML model predicts class
-5. Output displayed as REAL or FAKE
+4. Passive Aggressive Classifier predicts output
+5. System displays result: **REAL or FAKE**
 
 ---
 
 ## 📸 Screenshots
 
-### 🏠 Home Page
+### 🏠 Application Interface
 ![Home](screenshots/home.png)
 
-### 📊 Prediction Result
+### 📊 Prediction Output
 ![Result](screenshots/result.png)
 
 ---
 
-## 🎯 Use Cases
+## 🎯 Applications
 
-- Social media fake content detection
-- News verification platforms
-- Media authenticity checking
-- Content moderation systems
-
----
-
-## 📊 Model Performance
-
-- Accuracy: High (based on dataset training)
-- Precision: Optimized classification
-- Recall: Balanced detection system
+- Fake news detection systems
+- Social media content verification
+- News credibility analysis tools
+- Media monitoring platforms
+- Digital misinformation control systems
 
 ---
 
-## 🔮 Future Enhancements
+## 🚀 Future Enhancements
 
 - 🔥 Deep Learning (LSTM / BERT integration)
-- 🌐 Real-time web scraping news detection
-- 📱 Mobile application integration
+- 🌐 Real-time news scraping from websites
+- 📱 Mobile application version
 - 🌍 Multi-language fake news detection
-- ☁️ Cloud deployment (AWS / GCP)
+- ☁️ Cloud deployment (AWS / Azure)
+- 🤖 Chrome extension integration
 
 ---
 
@@ -150,4 +172,4 @@ GitHub: https://github.com/ketkidevkar
 
 ---
 
-⭐ *AI for combating misinformation and building trust in digital content*
+⭐ *A step towards combating misinformation using Artificial Intelligence*
